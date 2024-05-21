@@ -1,0 +1,20 @@
+Xin chào, đây là hướng dẫn sử dụng
+- Đầu tiên, khi muốn thực hiện 1 bài toán phân tích, chúng ta cần upload được data lên.
+- Sau đó, chúng ta có thể phân tích dữ liệu bằng các tùy chọn trong mục Analys data (chỉ áp dụng với dạng số có trong data).
+    - Chúng ta cần chọn 1 tùy chọn, sau đó chọn những cột muốn thông kê. Sau khi chọn hết, sẽ xuất hiện nút Analys. Bên cạnh đó là nút reset nếu muốn bắt đầu phân tích lại
+- Tiếp đó, chúng ta có thể trực quan hóa dữ liệu bằng các loại biểu đồ trên các cột thuộc tính tùy chọn.
+    - Biểu đồ chỉ áp dụng với dữ liệu dạng số. Sau khi chọn hết các options sẽ hiện lên nút "Xem biểu đồ", có thể ấn nút reset để bắt đầu lại việc xem biểu đồ
+
+Xử lý dữ liệu:
+- Ta có thể điền khuyết dữ liệu (với dữ liệu dạng số) (có thể bỏ qua nếu dữ liệu không khuyết)
+- Sau đó, ta xử lý ngoại lai trên 1 cột thuộc tính, điền đầy đủ giới hạn min-max, hệ thống sẽ hiển thị nút "Thực hiện xử lý". (Có thể bỏ qua nếu dữ liệu ổn định)
+- Sau đó, mục mã hóa dữ liệu dạng chữ sẽ mã hóa những cột dữ liệu dạng chữ theo get_dummy. Ấn nút 'mã hóa sẽ thực hiện mã hóa', sau đó ta nối 2 bảng dữ liệu số ban đầu và số (đã mã hóa text) để tạo được 1 bộ dữ liệu toàn số
+- Chọn tập X Y sẽ là phương pháp chọn các biến độc lập X và biến phụ thuộc Y, sau đó X và Y sẽ được chia dữ liệu theo tỷ lệ 80-20 train-test.
+- Trong mục chuẩn hóa, ta lựa chọn 1 phương pháp chuẩn hóa bất kỳ, lúc này sẽ hiện lên nút chuẩn hóa. Ấn vào sẽ tiến hành chuẩn hóa X_train và sau đó chuẩn hóa X_test theo X_train.
+
+Huấn luyện và đánh giá:
+- Trong mục huấn luyện mô hình, ta cần xác định bài toán thực hiện thuộc phân loại hay hồi quy. Lưu ý là chỉ được chọn 1 mô hình. 
+Khi chọn xong sẽ hiện ra các thông số đánh giá mô hình tương ứng. Ấn chọn xong thông số đánh giá xong sẽ hiển thị nút "huấn luyện". Nhấn nút này, mô hình sẽ được huấn luyện và đưa ra kết quả đánh giá
+
+Dự báo dữ liệu:
+-Chúng ta sẽ nhập dữ liệu theo những cột X đã chọn, khi nhập đủ sẽ hiện ra nút dự báo. Ấn nút này sẽ hiển thị kết quả dự báo theo thông số vừa nhập
